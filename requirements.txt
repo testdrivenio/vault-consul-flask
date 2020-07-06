@@ -1,0 +1,5 @@
+Flask==1.1.2
+flask-migrate==2.5.3
+Flask-SQLAlchemy==2.4.2
+gunicorn==20.0.4
+psycopg2==2.8.5
