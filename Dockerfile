@@ -3,7 +3,7 @@
 ###########
 
 # Base Image
-FROM python:3.8 as builder
+FROM python:3.10 as builder
 
 # Install Requirements
 COPY requirements.txt /
@@ -15,7 +15,7 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /wheels -r requirements.txt
 #########
 
 # Base Image
-FROM python:3.8-slim
+FROM python:3.10-slim
 
 # Install curl
 RUN apt-get update && apt-get install -y curl
